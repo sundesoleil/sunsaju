@@ -62,7 +62,7 @@ function PersonalInfoInputForm() {
 
   const [info, setInfo] = useState({
     name: '',
-    sex: 'female',
+    gender: 'female',
     year: '',
     month: '',
     day: '',
@@ -126,8 +126,8 @@ function PersonalInfoInputForm() {
               </Grid>
               <Grid item xs={12} sm={12}>
                 <FormControl align="left" fullWidth>
-                  <InputLabel id="select-sex">성별</InputLabel>
-                  <Select labelId="select-sex-label" id="select-sex" name="sex" value={info.sex} label="Age" onChange={changeHandler}>
+                  <InputLabel id="select-gender">성별</InputLabel>
+                  <Select labelId="select-gender-label" id="select-gender" name="gender" value={info.gender} label="Gender" onChange={changeHandler}>
                     <MenuItem value={'female'}>여성</MenuItem>
                     <MenuItem value={'male'}>남성</MenuItem>
                   </Select>
