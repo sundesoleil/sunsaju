@@ -1,25 +1,35 @@
 @font-face {
-  font-family: 'EBSHMJESaeronRA';
-  src: url('./assets/fonts/EBS훈민정음새론R.otf') format('woff');
+  font-family: 'NanumSquareNeo-Variable';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
-.title {
-  font-family: 'EBSHMJESaeronRA';
+@font-face {
+  font-family: 'MonoplexKR-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_Monoplex-kr@1.0/MonoplexKR-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
 }
 
 .App {
   text-align: center;
+  background-color: #282c34;
 }
 
 * {
-  background: #ffffff;
-  color: #1F2437;
+  /* background: #282c34; */
+  font-family: 'NanumSquareNeo-Variable';
 }
 
 .text-primary {
-  color: #e9a69e;
+  color: #ffffff;
+}
+.text-secondary {
+  color: #bdbbbb;
+}
+.text-stress {
+  color: #d6457d;
 }
 
 .App-logo {
