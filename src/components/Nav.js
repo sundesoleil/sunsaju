@@ -27,7 +27,7 @@ function Nav() {
               <img src={logo} width="32" height="32" alt="logo" />
             </IconButton>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              <LogoText>순 사 주 S O O N S A J U</LogoText>
+              <LogoText style={{ whiteSpace: 'nowrap' }}>순 사 주 S O O N S A J U</LogoText>
             </Typography>
             <Button style={{ color: '#000000' }}></Button>
           </Toolbar>
