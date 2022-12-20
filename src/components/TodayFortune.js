@@ -14,35 +14,31 @@ const Item = styled(Paper)(({ theme }) => ({
   padding: theme.spacing(2),
   textAlign: 'center',
   color: '#ffffff',
-  height: '300px',
+  height: '150px',
 }));
 
 function FormRow() {
   let fortunes = [
     { id: 1, name: 'money', title: '오늘의 재물운', poster: Mars },
     { id: 2, name: 'work', title: '오늘의 직업운', poster: Planet },
-    { id: 3, name: 'love', title: '오늘의 애정운', poster: Galaxy },
+    { id: 3, name: 'study', title: '오늘의 학업운', poster: Planet },
+    { id: 4, name: 'love', title: '오늘의 애정운', poster: Galaxy },
   ];
-
-  // function getRandomFortuneResult(name) {
-  //   alert(name);
-  // }
 
   return (
     <React.Fragment>
       {fortunes.map((fortune) => (
-        <Grid key={fortune.id} item xs={4} style={{ cursor: 'pointer' }}>
+        <Grid key={fortune.id} item xs={3} style={{ cursor: 'pointer' }}>
           <NavLink to={`/today/${fortune.name}`}>
             <Item name={fortune.name} style={{ position: 'relative', backgroundImage: `url(${fortune.poster})`, backgroundSize: 'auto 100%' }}>
               <h3
                 style={{
                   position: 'absolute',
-                  whiteSpace: 'nowrap',
                   transform: 'translate(-50%, -50%)',
                   top: '50%',
                   left: '50%',
                   opacity: '80%',
-                  fontSize: '140%',
+                  wordBreak: 'keep-all',
                 }}
               >
                 {fortune.title}

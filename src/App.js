@@ -20,6 +20,7 @@ function App() {
           <Route path="/result" element={<Result />} />
           <Route path="/today" element={<Today />}>
             <Route path="money" element={<div>재물운</div>} />
+            <Route path="study" element={<div>학업운</div>} />
             <Route path="love" element={<div>애정운</div>} />
             <Route path="work" element={<div>직장운</div>} />
           </Route>
