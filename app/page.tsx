@@ -4,5 +4,5 @@ export default function Home() {
       <h1>Pagejsx입니다.</h1>
       <h1>About</h1>
     </>
-  );
+  )
 }
