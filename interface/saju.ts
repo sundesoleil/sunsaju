@@ -21,11 +21,11 @@ export interface Saju {
   kdGanJee: string
   hweek: string
   kweek: string
-  starts: string
+  stars: string
   leapMonth: number
   monthSize: number
   ddi: string
-  holidy: number
+  holiday: number
   chunganTime: string
   chunganDay: string
   chunganMonth: string

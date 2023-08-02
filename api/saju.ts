@@ -1,17 +1,23 @@
 import { Member } from '@/interface/member'
-import axios from '.'
+import api from '@/utils/api'
 
 export const getSaju = async (member: Member) => {
-  console.log('# member params: ', member)
-  const { data } = await axios.get('/api/v1/personality/feature', {
-    params: {
-      name: decodeURIComponent(member.name),
-      gender: member.gender,
-      year: member.year,
-      month: member.month,
-      day: member.day,
-      calendarType: member.calendarType,
-    },
-  })
-  return data
+  return await api
+    .get('/api/v1/personality/feature', {
+      params: {
+        name: member.name,
+        gender: member.gender,
+        year: member.year,
+        month: member.month,
+        day: member.day,
+        calendarType: member.calendarType,
+      },
+    })
+    .then((res) => {
+      console.log('# [fetch saju data]', res)
+      return res.data
+    })
+    .catch((error) => {
+      console.log('# error', error)
+    })
 }
