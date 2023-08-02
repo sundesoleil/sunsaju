@@ -10,10 +10,12 @@ interface SajuResultProps {
 const SajuResult: React.FC<SajuResultProps> = ({ member }) => {
   const { isLoading, data } = useFetchSaju(member)
 
+  console.log('data in Res =>', data)
+
   return (
     <div>
       <h1>Saju Page</h1>
-      {isLoading ? <div>로딩중</div> : <p>{data?.feature.ggMonth}</p>}
+      {isLoading ? <div>로딩중</div> : <p>{data?.feature?.ggMonth}</p>}
     </div>
   )
 }

@@ -19,5 +19,6 @@ export const getSaju = async (member: Member) => {
     })
     .catch((error) => {
       console.log('# error', error)
+      return error
     })
 }
