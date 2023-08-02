@@ -5,7 +5,7 @@ import { Member } from '@/interface/member'
 
 const useFetchSaju = (member: Member) => {
   return useQuery<Saju, Error>({
-    queryKey: ['saju', member],
+    queryKey: ['saju'],
     queryFn: () => getSaju(member),
   })
 }

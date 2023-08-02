@@ -2,15 +2,10 @@ import styles from '@/styles/Button.module.scss'
 
 interface ButtonProps {
   title: string
-  onClick: () => void
 }
 
-function SubmitButton({ title, onClick }: ButtonProps) {
-  return (
-    <button className={styles.button__submit} onClick={onClick}>
-      {title}
-    </button>
-  )
+function SubmitButton({ title }: ButtonProps) {
+  return <button className={styles.button__submit}>{title}</button>
 }
 
 export default SubmitButton

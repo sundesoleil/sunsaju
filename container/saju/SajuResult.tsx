@@ -3,14 +3,19 @@
 import useFetchSaju from '@/hooks/useFetchSaju'
 import { Member } from '@/interface/member'
 
-const SajuResult = (member: Member) => {
-  const { data, isLoading } = useFetchSaju(member)
+interface SajuResultProps {
+  member: Member
+}
+
+const SajuResult: React.FC<SajuResultProps> = ({ member }) => {
+  const { isLoading, data } = useFetchSaju(member)
+
+  console.log('# [saju res]', data)
 
   return (
     <div>
       <h1>Saju Page</h1>
-      {isLoading && <div>Loading...</div>}
-      {data && <div>{data.feature.ggMonth}</div>}
+      {isLoading ? <div>로딩중</div> : <p>{data?.feature.ggMonth}</p>}
     </div>
   )
 }
