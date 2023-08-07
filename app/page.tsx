@@ -1,8 +1,15 @@
-export default function Home() {
+import Link from 'next/link'
+
+const Home: React.FC = () => {
   return (
-    <>
-      <h1>Pagejsx입니다.</h1>
-      <h1>About</h1>
-    </>
+    <div>
+      <h1>
+        <button>
+          <Link href={'/saju'}>사주보러가기</Link>
+        </button>
+      </h1>
+    </div>
   )
 }
+
+export default Home
