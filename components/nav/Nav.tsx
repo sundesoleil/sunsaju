@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from '@/styles/Nav.module.scss'
 import Link from 'next/link'
+import { FaBars } from 'react-icons/fa'
 
 const Nav: React.FC = () => {
   return (
@@ -11,14 +12,10 @@ const Nav: React.FC = () => {
             Sunsaju
           </Link>
         </li>
-        <li className={styles.navItem}>
-          <Link href="/horoscope" className={styles.navLink}></Link>
-        </li>
-        <li className={styles.navItem}>
-          <Link href="/readings" className={styles.navLink}></Link>
-        </li>
-        {/* Add more navigation items here */}
       </ul>
+      <div className={styles.menuIcon}>
+        <FaBars />
+      </div>
     </nav>
   )
 }
