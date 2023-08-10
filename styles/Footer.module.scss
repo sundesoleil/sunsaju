@@ -2,13 +2,13 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: var(--color-beige);
+  background-color: var(--color-dark);
   padding: 20px;
   text-align: center;
 }
 
 .footer__copyright {
   font-size: 12px;
-  color: #888;
+  color: var(--color-bright);
   margin-top: 5px;
 }

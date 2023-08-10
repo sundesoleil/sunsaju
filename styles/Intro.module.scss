@@ -1,0 +1,22 @@
+.introSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 2rem;
+  background-image: linear-gradient(
+      rgba(26, 26, 26, 1.75) 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    url('/images/forest.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.introContent {
+  width: 50%;
+}
+
+.imageContainer {
+  width: 50%;
+}

@@ -6,10 +6,9 @@ const Footer: React.FC = () => {
 
   return (
     <footer className={styles.footer}>
-      <p className={styles.footer__copyright}>
-        {' '}
+      <span className={styles.footer__copyright}>
         &copy; {currentYear} SunSaju. All rights reserved.
-      </p>
+      </span>
     </footer>
   )
 }

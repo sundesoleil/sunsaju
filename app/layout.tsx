@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Providers from '@/utils/provider'
 import '@/styles/globals.scss'
-import TopNavbar from '@/components/nav/TopNavbar'
+import Nav from '@/components/nav/Nav'
 import Footer from '@/components/footer/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
   <html lang="ko">
     <body className={inter.className}>
-      <TopNavbar />
+      <Nav />
       <Providers>{children}</Providers>
       <Footer />
     </body>
